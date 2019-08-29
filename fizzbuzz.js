@@ -1,19 +1,22 @@
-for (i = 1; i < 100; i++) {
-    let printed = false;
-    if (i % 4 === 0) {
-        console.log("fizz");
-        printed = true;
+
+function fuzzbuzz(maxval) {
+    for (i = 1; i < maxval; i++) {
+        let printed = false;
+        if (i % 4 === 0) {
+            console.log("fizz");
+            printed = true;
+        }
+        if (i % 6 === 0) {
+            console.log("buzz");
+            printed = true;
+        }
+        if (i % 5 === 0) {
+            console.log("bool");
+            printed = true;
+        }
+        if (printed === false) {
+            console.log(i);
+        }
+        // probably some endline call like <br> here
     }
-    if (i % 6 === 0) {
-        console.log("buzz");
-        printed = true;
-    }
-    if (i % 5 === 0) {
-        console.log("bool");
-        printed = true;
-    }
-    if (printed === false) {
-        console.log(i);
-    }
-    // probably some endline call like <br> here
 }
