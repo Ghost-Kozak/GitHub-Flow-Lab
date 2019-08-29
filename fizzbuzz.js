@@ -8,6 +8,10 @@ for (i = 1; i < 100; i++) {
         console.log("buzz");
         printed = true;
     }
+    if (i % 5 === 0) {
+        console.log("bool");
+        printed = true;
+    }
     if (printed === false) {
         console.log(i);
     }
